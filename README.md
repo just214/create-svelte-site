@@ -1,6 +1,6 @@
 # Create Svelte Site [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) [![Version](https://img.shields.io/npm/v/create-svelte-site.svg)](https://npmjs.org/package/create-svelte-site) [![Downloads/week](https://img.shields.io/npm/dw/create-svelte-site.svg)](https://npmjs.org/package/create-svelte-site) [![License](https://img.shields.io/npm/l/create-svelte-site.svg)](https://github.com/gojutin/create-svelte-site/blob/master/package.json)
 
-### Create a [Svelte](https://svelte.dev/) or [Sapper](https://sapper.svelte.dev/) app in a single command.
+### Create a [Svelte](https://svelte.dev/) or [Sapper](https://sapper.svelte.dev/) site in a single command.
 
 
 
@@ -8,7 +8,7 @@
 
 ## Usage
 
-## Creating an App
+## Creating a Site
 **You’ll need to have Node 8.10.0 or later on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
 
 ### With npx
@@ -35,7 +35,7 @@ You will be prompted to select a template from the official Svelte template libr
 
 ![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_300/v1557245550/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
 
-After you make your selection, your new app will be created in a directory named `my-site` inside the current folder.
+After you make your selection, your new site will be created in a directory named `my-site` inside the current folder.
 
 ### Next steps:
 
