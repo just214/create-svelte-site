@@ -4,7 +4,7 @@
 
 
 
-![alt](https://res.cloudinary.com/gojutin/image/upload/v1557239887/create-svelte-site/create-svelte-site.gif "create-svelte-site gif")
+![alt](https://res.cloudinary.com/gojutin/image/upload/v1557239887/create-svelte-app/create-svelte-app.gif "create-svelte-site gif")
 
 ## Usage
 
@@ -33,7 +33,7 @@ _Note: We are using `my-app` as an example. This can be any project name you cho
 
 You will be prompted to select a template from the official Svelte template library.
 
-![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_400/v1557192510/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
+![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_400/v1557192510/create-svelte-app/create-svelte-app-prompt.png "create-svelte-site prompt")
 
 After you make your selection, your new app will be created in a directory named `my-app` inside the current folder.
 
