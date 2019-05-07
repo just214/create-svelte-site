@@ -10,7 +10,7 @@ const degit = require('degit');
 
 class CreateSvelteSite extends Command {
   public static readonly description =
-    "Create a Svelte or Sapper app in a single command.";
+    "Create a Svelte or Sapper site in a single command.";
 
   public static readonly flags = {
     help: flags.help({ char: "h" }),
@@ -24,7 +24,7 @@ class CreateSvelteSite extends Command {
     if (!args.file) {
       this.error(
         `Please provide a project name. ${chalk.cyan(
-          "ex. create-svelte-site my-new-app"
+          "ex. create-svelte-site my-site"
         )}`
       );
     }

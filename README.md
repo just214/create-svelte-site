@@ -4,7 +4,7 @@
 
 
 
-![alt](https://res.cloudinary.com/gojutin/image/upload/v1557239887/create-svelte-app/create-svelte-app.gif "create-svelte-site gif")
+![create-svelte-site gif](https://res.cloudinary.com/gojutin/image/upload/v1557245484/create-svelte-site/create-svelte-site.gif "create-svelte-site gif")
 
 ## Usage
 
@@ -14,35 +14,35 @@
 ### With npx
 
 ```sh
-  npx create-svelte-site my-app
+  npx create-svelte-site my-site
 ```
 
 ### With npm
 
 ```sh
-  npm init svelte-app my-app
+  npm init svelte-site my-site
 ```
 
 ### With yarn
 
 ```sh
-  yarn create svelte-app my-app
+  yarn create svelte-site my-site
 ```
 
-_Note: We are using `my-app` as an example. This can be any project name you choose._
+_Note: We are using `my-site` as an example. This can be any project name you choose._
 
 You will be prompted to select a template from the official Svelte template library.
 
-![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_400/v1557192510/create-svelte-app/create-svelte-app-prompt.png "create-svelte-site prompt")
+![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_300/v1557245550/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
 
-After you make your selection, your new app will be created in a directory named `my-app` inside the current folder.
+After you make your selection, your new app will be created in a directory named `my-site` inside the current folder.
 
 ### Next steps:
 
 Navigate to the newly created directory.
 
 ```sh
-cd my-app
+cd my-site
 ```
 
 Install the dependencies
@@ -75,11 +75,11 @@ Under the hood, this library is using [degit](https://github.com/Rich-Harris/deg
 
 | Command            | Script                                              |
 | ------------------ | --------------------------------------------------- |
-| Svelte (rollup)    | `degit svelte/template my-app`                  |
-| Svelte (webpack)   | `degit svelte/template-webpack my-app`          |
-| Svelte (component) | `degit svelte/component-template my-app`        |
-| Sapper (rollup)    | `degit sveltejs/sapper-template#rollup my-app`  |
-| Sapper (webpack)   | `degit sveltejs/sapper-template#webpack my-app` |
+| Svelte (rollup)    | `degit svelte/template my-site`                  |
+| Svelte (webpack)   | `degit svelte/template-webpack my-site`          |
+| Svelte (component) | `degit svelte/component-template my-site`        |
+| Sapper (rollup)    | `degit sveltejs/sapper-template#rollup my-site`  |
+| Sapper (webpack)   | `degit sveltejs/sapper-template#webpack my-site` |
 
 ## Useful Resources
 
