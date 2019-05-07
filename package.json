@@ -1,7 +1,7 @@
 {
   "name": "create-svelte-site",
   "description": "Create a Svelte or Sapper app in a single command.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "gojutin @gojutin",
   "bin": {
     "create-svelte-site": "./bin/run"
