@@ -8,7 +8,7 @@ import templateOptions, {TemplateOption} from './templates';
 const degit = require('degit');
 /* tslint:enable */
 
-class CreateSvelteApp extends Command {
+class CreateSvelteSite extends Command {
   public static readonly description =
     "Create a Svelte or Sapper app in a single command.";
 
@@ -20,7 +20,7 @@ class CreateSvelteApp extends Command {
   public static readonly args: any[] = [{ name: "file" }];
 
   public async run(): Promise<any> {
-    const { args } = this.parse(CreateSvelteApp);
+    const { args } = this.parse(CreateSvelteSite);
     if (!args.file) {
       this.error(
         `Please provide a project name. ${chalk.cyan(
@@ -70,4 +70,4 @@ class CreateSvelteApp extends Command {
   }
 }
 
-export = CreateSvelteApp;
+export = CreateSvelteSite;
