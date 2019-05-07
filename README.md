@@ -63,7 +63,7 @@ Then, start up the development server.
 npm run dev
 ```
 
-Your app will be available at [http://localhost:5000](http://localhost:5000).
+Your site will be available at [http://localhost:5000](http://localhost:5000).
 
 _Note: `npm run dev` does not apply to the `Svelte (component)` project type._
 

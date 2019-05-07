@@ -56,7 +56,7 @@ class CreateSvelteSite extends Command {
       const endTime = performance.now();
       const timeLapsed = Math.floor(endTime - startTime);
       cli.action.stop(chalk.green(`\n\n ✔ Done in ${timeLapsed}ms\n`));
-      this.log(chalk.green(`🚀  Your app is ready to go!\n`));
+      this.log(chalk.green(`🚀  Your new site is ready to go!\n`));
       this.log("Next Steps:\n");
       this.log(chalk.cyan(`cd ${args.file}\n`));
       this.log(chalk.cyan(`npm install\n`));
