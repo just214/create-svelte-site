@@ -4,7 +4,7 @@
 
 
 
-![create-svelte-site gif](https://res.cloudinary.com/gojutin/image/upload/v1557245484/create-svelte-site/create-svelte-site.gif "create-svelte-site gif")
+![create-svelte-site gif](https://res.cloudinary.com/gojutin/image/upload/v1557246205/create-svelte-site/create-svelte-site.gif "create-svelte-site gif")
 
 ## Usage
 
