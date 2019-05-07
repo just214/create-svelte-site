@@ -24,7 +24,7 @@ class CreateSvelteApp extends Command {
     if (!args.file) {
       this.error(
         `Please provide a project name. ${chalk.cyan(
-          "ex. create-svelte-app my-new-app"
+          "ex. create-svelte-site my-new-app"
         )}`
       );
     }

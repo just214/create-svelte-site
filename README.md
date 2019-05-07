@@ -1,10 +1,10 @@
-# Create Svelte App [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) [![Version](https://img.shields.io/npm/v/create-svelte-app.svg)](https://npmjs.org/package/create-svelte-app) [![Downloads/week](https://img.shields.io/npm/dw/create-svelte-app.svg)](https://npmjs.org/package/create-svelte-app) [![License](https://img.shields.io/npm/l/create-svelte-app.svg)](https://github.com/gojutin/create-svelte-app/blob/master/package.json)
+# Create Svelte Site [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) [![Version](https://img.shields.io/npm/v/create-svelte-site.svg)](https://npmjs.org/package/create-svelte-site) [![Downloads/week](https://img.shields.io/npm/dw/create-svelte-site.svg)](https://npmjs.org/package/create-svelte-site) [![License](https://img.shields.io/npm/l/create-svelte-site.svg)](https://github.com/gojutin/create-svelte-site/blob/master/package.json)
 
 ### Create a [Svelte](https://svelte.dev/) or [Sapper](https://sapper.svelte.dev/) app in a single command.
 
 
 
-![alt](https://res.cloudinary.com/gojutin/image/upload/v1557239887/create-svelte-app/create-svelte-app.gif "create-svelte-app gif")
+![alt](https://res.cloudinary.com/gojutin/image/upload/v1557239887/create-svelte-site/create-svelte-site.gif "create-svelte-site gif")
 
 ## Usage
 
@@ -14,7 +14,7 @@
 ### With npx
 
 ```sh
-  npx create-svelte-app my-app
+  npx create-svelte-site my-app
 ```
 
 ### With npm
@@ -33,7 +33,7 @@ _Note: We are using `my-app` as an example. This can be any project name you cho
 
 You will be prompted to select a template from the official Svelte template library.
 
-![create-svelte-app prompt](https://res.cloudinary.com/gojutin/image/upload/w_400/v1557192510/create-svelte-app/create-svelte-app-prompt.png "create-svelte-app prompt")
+![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_400/v1557192510/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
 
 After you make your selection, your new app will be created in a directory named `my-app` inside the current folder.
 

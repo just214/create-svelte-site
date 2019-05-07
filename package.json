@@ -1,12 +1,12 @@
 {
-  "name": "create-svelte-app",
+  "name": "create-svelte-site",
   "description": "Create a Svelte or Sapper app in a single command.",
   "version": "0.0.1",
   "author": "gojutin @gojutin",
   "bin": {
-    "create-svelte-app": "./bin/run"
+    "create-svelte-site": "./bin/run"
   },
-  "bugs": "https://github.com/gojutin/create-svelte-app/issues",
+  "bugs": "https://github.com/gojutin/create-svelte-site/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -40,19 +40,19 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/gojutin/create-svelte-app",
+  "homepage": "https://github.com/gojutin/create-svelte-site",
   "keywords": [
     "oclif",
     "svelte",
     "sapper",
-    "create-svelte-app"
+    "create-svelte-site"
   ],
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
-    "bin": "create-svelte-app"
+    "bin": "create-svelte-site"
   },
-  "repository": "gojutin/create-svelte-app",
+  "repository": "gojutin/create-svelte-site",
   "scripts": {
     "posttest": "tslint -p test -t stylish",
     "fix": "tslint -p test -t stylish --fix",

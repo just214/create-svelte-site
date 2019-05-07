@@ -1,6 +1,6 @@
 import {expect} from '@oclif/test'
 
-describe('create-svelte-app', () => {
+describe('create-svelte-site', () => {
   // Todo- Write tests.
   // test
   //   .stdout()
