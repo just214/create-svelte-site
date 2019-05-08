@@ -69,24 +69,24 @@ _Note: `npm run dev` does not apply to the `Svelte (component)` project type._
 
 ## Commands
 
-Here is a full list of the templates and the corresponding scripts that are executed. 
+Here is a full list of the options and the corresponding templates that are executed. 
 
-Under the hood, this library is using [degit](https://github.com/Rich-Harris/degit) to generate your new project using an official Svelte template.
+Under the hood, this library is using [nodegit](https://github.com/nodegit/nodegit/) to generate your new project using an official Svelte template.
 
-| Command            | Script                                              |
-| ------------------ | --------------------------------------------------- |
-| Svelte (rollup)    | `degit svelte/template my-site`                  |
-| Svelte (webpack)   | `degit svelte/template-webpack my-site`          |
-| Svelte (component) | `degit svelte/component-template my-site`        |
-| Sapper (rollup)    | `degit sveltejs/sapper-template#rollup my-site`  |
-| Sapper (webpack)   | `degit sveltejs/sapper-template#webpack my-site` |
+| Command            | Template                           |
+| ------------------ | -----------------------------------|
+| Svelte (rollup)    | `svelte/template`                  |
+| Svelte (webpack)   | `svelte/template-webpack`          |
+| Svelte (component) | `svelte/component-template`        |
+| Sapper (rollup)    | `sveltejs/sapper-template#rollup`  |
+| Sapper (webpack)   | `sveltejs/sapper-template#webpack` |
 
 ## Useful Resources
 
 - [Official Svelte website](https://svelte.dev/)
 - [Official Sapper website](https://sapper.svelte.dev/)
-- [Svelte Repo](https://github.com/sveltejs/svelte)
-- [Sapper Repo](https://github.com/sveltejs/sapper)
+- [Svelte repo](https://github.com/sveltejs/svelte)
+- [Sapper repo](https://github.com/sveltejs/sapper)
 - [Svelte (rollup) template repo](https://github.com/sveltejs/template)
 - [Svelte (webpack) template repo](https://github.com/sveltejs/template-webpack)
 - [Svelte (component) template repo](https://github.com/sveltejs/component-template)

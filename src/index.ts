@@ -4,9 +4,7 @@ import { cli } from "cli-ux";
 import inquirer from "inquirer";
 import { performance } from "perf_hooks";
 import templateOptions, {TemplateOption} from './templates';
-/* tslint:disable */
-const degit = require('degit');
-/* tslint:enable */
+var Git = require("nodegit");
 
 class CreateSvelteSite extends Command {
   public static readonly description =
@@ -21,7 +19,8 @@ class CreateSvelteSite extends Command {
 
   public async run(): Promise<any> {
     const { args } = this.parse(CreateSvelteSite);
-    if (!args.file) {
+    const {file : projectName} = args;
+    if (!projectName) {
       this.error(
         `Please provide a project name. ${chalk.cyan(
           "ex. create-svelte-site my-site"
@@ -46,27 +45,37 @@ class CreateSvelteSite extends Command {
       (o: TemplateOption) => o.name === projectType
     ) as TemplateOption;
 
-    const emitter = degit(template, {
-      cache: true,
-      force: true,
-      verbose: true
-    })
 
-    emitter.clone(args.file).then(() => {
-      const endTime = performance.now();
-      const timeLapsed = Math.floor(endTime - startTime);
-      cli.action.stop(chalk.green(`\n\n ✔ Done in ${timeLapsed}ms\n`));
-      this.log(chalk.green(`🚀  Your new site is ready to go!\n`));
-      this.log("Next Steps:\n");
-      this.log(chalk.cyan(`cd ${args.file}\n`));
-      this.log(chalk.cyan(`npm install\n`));
-      if (projectType !== "Svelte (component)") {
-        this.log(chalk.cyan(`npm run dev\n`));
-        this.log(
-          `Visit ${chalk.cyan("http://localhost:5000")} in your browser.\n`
-        );
+  Git.Clone(`https://github.com/${template}`, projectName, 
+  
+  {
+    fetchOpts: {
+      callbacks: {
+        certificateCheck: function() {
+          // github will fail cert check on some OSX machines
+          // this overrides that check
+          return 0;
+        }
       }
-    });
+    }
+  }).then(function() {
+    const endTime = performance.now();
+    const timeLapsed = Math.floor(endTime - startTime);
+    cli.action.stop(chalk.green(`\n\n ✔ Done in ${timeLapsed}ms\n`));
+    console.log(chalk.green(`🚀  Your new site is ready to go!\n`));
+    console.log("Next Steps:\n");
+    console.log(chalk.cyan(`cd ${projectName}\n`));
+    console.log(chalk.cyan(`npm install\n`));
+    if (projectType !== "Svelte (component)") {
+      console.log(chalk.cyan(`npm run dev\n`));
+      console.log(
+        `Visit ${chalk.cyan("http://localhost:5000")} in your browser.\n`
+      );
+    }
+  }).catch(() => {
+    console.error("Oops...something went wrong. Please try again.")
+  })
+
   }
 }
 
