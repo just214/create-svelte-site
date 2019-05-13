@@ -33,7 +33,7 @@ _Note: We are using `my-site` as an example. This can be any project name you ch
 
 You will be prompted to select a template from the official Svelte template library.
 
-![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_300/v1557245550/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
+![create-svelte-site prompt](https://res.cloudinary.com/gojutin/image/upload/w_320/v1557245550/create-svelte-site/create-svelte-site-prompt.png "create-svelte-site prompt")
 
 After you make your selection, your new site will be created in a directory named `my-site` inside the current folder.
 
@@ -71,13 +71,14 @@ _Note: `npm run dev` does not apply to the `Svelte (component)` project type._
 
 Here is a full list of the options and the corresponding templates that are executed. 
 
-Under the hood, this library is using [nodegit](https://github.com/nodegit/nodegit/) to generate your new project using an official Svelte template.
+Under the hood, this library is using [nodegit](https://github.com/nodegit/nodegit/) to generate your new project using official Svelte and community templates.
 
 | Command            | Template                           |
 | ------------------ | -----------------------------------|
 | Svelte (rollup)    | `svelte/template`                  |
 | Svelte (webpack)   | `svelte/template-webpack`          |
 | Svelte (component) | `svelte/component-template`        |
+| Svelte (custom element) | `gojutin/svelte-custom-element` |
 | Sapper (rollup)    | `sveltejs/sapper-template#rollup`  |
 | Sapper (webpack)   | `sveltejs/sapper-template#webpack` |
 
@@ -90,4 +91,5 @@ Under the hood, this library is using [nodegit](https://github.com/nodegit/nodeg
 - [Svelte (rollup) template repo](https://github.com/sveltejs/template)
 - [Svelte (webpack) template repo](https://github.com/sveltejs/template-webpack)
 - [Svelte (component) template repo](https://github.com/sveltejs/component-template)
+- [Svelte (custom element) template repo](https://github.com/gojutin/svelte-custom-element)
 - [Sapper template repo](https://github.com/sveltejs/sapper-template)

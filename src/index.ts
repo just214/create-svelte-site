@@ -41,9 +41,10 @@ class CreateSvelteSite extends Command {
     cli.action.start(`Great choice! Generating your ${projectType} app`);
     const startTime = performance.now();
 
-    const { template } = templateOptions.find(
+    const { template, port } = templateOptions.find(
       (o: TemplateOption) => o.name === projectType
     ) as TemplateOption;
+
 
 
   Git.Clone(`https://github.com/${template}`, projectName, 
@@ -69,11 +70,11 @@ class CreateSvelteSite extends Command {
     if (projectType !== "Svelte (component)") {
       console.log(chalk.cyan(`npm run dev\n`));
       console.log(
-        `Visit ${chalk.cyan("http://localhost:5000")} in your browser.\n`
+        `Visit ${chalk.cyan(`http://localhost:${port}`)} in your browser.\n`
       );
     }
-  }).catch(() => {
-    console.error("Oops...something went wrong. Please try again.")
+  }).catch((error: any) => {
+    console.error("Oops...something went wrong. Please try again.", error)
   })
 
   }
