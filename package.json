@@ -1,7 +1,7 @@
 {
   "name": "create-svelte-site",
   "description": "Create a Svelte or Sapper site in a single command.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "gojutin @gojutin",
   "bin": {
     "create-svelte-site": "./bin/run"
@@ -12,8 +12,8 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "chalk": "^2.4.2",
-    "cli-ux": "^5.2.1",
-    "inquirer": "^6.3.1",
+    "cli-ux": "^5.3.1",
+    "inquirer": "^6.5.0",
     "nodegit": "^0.24.3",
     "tslib": "^1"
   },
@@ -21,18 +21,18 @@
     "@oclif/test": "^1",
     "@oclif/tslint": "^3",
     "@types/chai": "^4",
-    "@types/inquirer": "^6.0.1",
+    "@types/inquirer": "^6.5.0",
     "@types/mocha": "^5",
-    "@types/node": "^10",
-    "@types/nodegit": "^0.24.6",
+    "@types/node": "^12",
+    "@types/nodegit": "^0.24.8",
     "chai": "^4",
-    "mocha": "^5",
-    "nyc": "^13",
+    "mocha": "^6",
+    "nyc": "^14",
     "ts-node": "^8",
     "tslint": "^5",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-immutable": "^5.5.2",
-    "typescript": "^3.3"
+    "tslint-immutable": "^6.0.1",
+    "typescript": "^3.5"
   },
   "engines": {
     "node": ">=8.0.0"
